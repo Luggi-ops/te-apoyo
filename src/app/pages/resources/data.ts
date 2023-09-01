@@ -36,7 +36,7 @@ const blogs = [
     user: {
       name: "Karina Marey",
       area: "Marketing",
-      avatar: "/assets/images/resources/avatar-1.png"
+      avatar: "assets/images/resources/avatar-1.png"
     }
   },
   {
@@ -47,7 +47,7 @@ const blogs = [
     user: {
       name: "Mauricio Torres",
       area: "Finanzas",
-      avatar: "/assets/images/resources/avatar-2.png"
+      avatar: "assets/images/resources/avatar-2.png"
     }
   },
 ]
