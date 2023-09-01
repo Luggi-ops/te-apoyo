@@ -1,0 +1,132 @@
+.top-section{
+  padding: 80px 56px 52px 173px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 717px;
+  gap: 56px;
+  position: relative;
+  z-index: 999;
+  overflow-x: hidden;
+}
+
+.top-section::before{
+  content: ' ';
+  width: 100%;
+  height: 593px;
+  background: linear-gradient(272.83deg, rgba(50, 157, 113, 0.9) 0%, #2C939E 21.46%, #2C939E 76.14%, #2E5C9C 100%, rgba(46, 92, 156, 0.8) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  clip-path: polygon(0 45%, 100% 0%, 100% 100%, 0% 100%);
+  
+}
+
+.top-section h1{
+  width: 100%;
+  max-width: max-content;
+  margin: 0 auto;
+  color: var(--black);
+  font-size: 60px;
+  font-weight: 800;
+  white-space: pre-line;
+}
+
+.top-section-info-title-gradient{
+  background: var(--title-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top-section-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-section-info-p{
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 32px;
+}
+
+.top-section-images{
+  display: grid;
+  grid-template-columns: 182px 171px 195px;
+  align-items: self-end;
+  gap: 28px;
+}
+
+.top-section-images img:nth-child(1){
+  width: 100%;
+  max-width: 182px;
+  align-self: end;
+}
+
+.top-section-images img:nth-child(2){
+  width: 100%;
+  max-width: 171px;
+  align-self: end;
+  margin-bottom: 32px;
+}
+
+.top-section-images img:nth-child(3){
+  width: 100%;
+  max-width: 195px;
+  align-self: end;
+  margin-bottom: 64px;
+}
+
+.top-section-images img:nth-child(4){
+  width: 100%;
+  max-width: 190px;
+  align-self: start;
+}
+
+.top-section-images img:nth-child(5){
+  width: 100%;
+  max-width: 180px;
+  align-self: start;
+  margin-top: -32px;
+}
+
+.top-section-images img:nth-child(6){
+  width: 100%;
+  max-width: 190px;
+  align-self: start;
+  margin-top: -64px;
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 1100px) {
+  .top-section{
+    background: linear-gradient(272.83deg, rgba(50, 157, 113, 0.9) 0%, #2C939E 21.46%, #2C939E 76.14%, #2E5C9C 100%, rgba(46, 92, 156, 0.8) 100%);;
+  }
+  .top-section-info-title-gradient{
+    background: transparent;
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    color: var(--white);
+  }
+
+  .top-section::before{
+    content: none;
+    clip-path: none;
+    
+  }
+
+  .top-section {
+    padding: 80px 16px 52px 16px;
+    justify-content: center;
+  }
+  
+}
+
+@media screen and (max-width: 720px) {
+  .top-section-images{
+    grid-template-columns: 1fr 1fr;
+  }
+}

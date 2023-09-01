@@ -1,0 +1,10 @@
+.btn-primary{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white);
+  padding: 16px;
+  background: var(--gradient);
+  text-decoration: none;
+  border-radius: 8px;
+  white-space: nowrap;
+}

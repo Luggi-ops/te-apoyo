@@ -1,0 +1,36 @@
+<div class="courses-bg">
+  <div class="base-container courses-container">
+    <h1>Cursos financieros</h1>
+    <p class="courses-info">Aquí puedes encontrar algunos recursos gratuitos y echar un vistazo de lo que puedes disfrutar dentro de nuestra plataforma premium.</p>
+  
+    <div class="courses-box">
+      <div class="courses-item" *ngFor="let course of courses" data-aos="fade-left" data-aos-duration="1500">
+        <div class="courses-item-img">
+          <img src="{{course.img}}" alt="{{course.title}}">
+          <span class="course-plan">{{course.isFree ? 'Gratis':'Pago'}}</span>
+        </div>
+        <div class="course-content">
+          <h3>{{course.title}}</h3>
+          <p>Por: {{course.author}}</p>
+          <div class="courses-description">
+            <ul>
+              <li>
+                <img src="assets/images/resources/tiempo-icon.svg" alt="">
+                <span>{{course.duration}}</span>
+              </li>
+              <li>
+                <img src="assets/images/resources/modulos-icon.svg" alt="">
+                <span>{{course.modules}} módulos</span>
+              </li>
+              <li>
+                <img src="assets/images/resources/modalidad-icon.svg" alt="">
+                <span>{{course.mode}}</span>
+              </li>
+            </ul>
+            </div>
+        </div>
+        <a href="" class="btn-course">Ver detalles</a>
+      </div>
+    </div>
+  </div>
+</div>

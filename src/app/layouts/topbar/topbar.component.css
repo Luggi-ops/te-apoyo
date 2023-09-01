@@ -1,0 +1,114 @@
+.topbar-fixed{
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  z-index: 99999;
+}
+
+.topbar-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+
+.menu-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 91px;
+}
+
+.menu-list{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+}
+
+.menu-list-item a{
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.btn-topbar-box{
+  cursor: pointer;
+  margin-bottom: .5rem;
+  display: none;
+}
+
+.btn-topbar, .btn-topbar::before, .btn-topbar::after{
+  content: ' ';
+  display: inline-block;
+  width: 30px;
+  height: 5px;
+  background-color: var(--black);
+  border-radius: 5px;
+  position: relative;
+  transition: ease .5s;
+}
+
+.btn-topbar::before{
+  position: absolute;
+  top: 8px;
+}
+
+.btn-topbar::after{
+  position: absolute;
+  top: -8px;
+}
+
+.btn-topbar-open{
+  transform: rotate(135deg);
+}
+
+.btn-topbar-open::before{
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.btn-topbar-open::after{
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .topbar-container{
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  .logo img{
+    width: 72px;
+  }
+
+  .menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--gray);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition: .5s;
+    z-index: 99999;
+  }
+
+  .menu-open{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  
+  .menu-list{
+    flex-direction: column;
+  }
+
+  .btn-topbar-box{
+    z-index: 99999;
+    display: block;
+  }
+}

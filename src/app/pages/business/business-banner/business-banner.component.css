@@ -1,0 +1,76 @@
+
+.banner-container{
+  padding-top: 72px;
+  padding-bottom: 57px;
+}
+
+.banner-img{
+  max-width: 556.79px;
+  width: 100%;
+}
+
+.banner-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 92px;
+}
+
+.banner-box{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.banner-box h1{
+  color: var(--black);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.banner-box .title-gradient{
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-box p{
+  color: var(--light);
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.banner-companies-img{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.banner-companies-img img{
+  width: 111px;
+}
+
+.btn-banner{
+  display: inline-flex;
+  padding: 16px;
+  width: 240px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--gradient);
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 8px;
+  margin-top: 22px;
+}
+
+@media screen and (max-width: 720px) {
+  .btn-banner{
+    width: 100%;
+  }
+}

@@ -1,0 +1,59 @@
+
+
+<div class="blog-container base-container">
+  <div class="blog-sidebar">
+    <div>
+      <h1>Blog <br>Te Apoyo</h1>
+      <p>Te compartimos un poco de la mente y la experiencia de nuestros expert </p>
+    </div>
+    <div class="blog-categories">
+      <ul>
+        <li *ngFor="let categorie of categories">
+          <a href="#" class="{{categorie.active? 'active': ''}}">{{categorie.name}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-box">
+    <div class="blog-item" *ngFor="let blog of blogs" data-aos="fade-right" data-aos-duration="1500">
+      <img src="{{blog.img}}" alt="{{blog.title}}">
+      <div>
+        <span class="categorie">{{blog.categorieName}}</span>
+        <h3>{{blog.title}}</h3>
+        <p>{{blog.preview}}</p>
+      </div>
+      <div class="blog-user">
+        <img src="{{blog.user.avatar}}" alt="{{blog.user.name}}">
+        <div class="blog-user-info">
+          <span>{{blog.user.name}}</span>
+          <span>{{blog.user.area}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="blog-pagination">
+      <a href="#">
+        <img src="assets/images/resources/prev.svg" alt="">
+      </a>
+      <ul>
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">5</a>
+        </li>
+      </ul>
+      <a href="#">
+        <img src="assets/images/resources/next.svg" alt="">
+      </a>
+    </div>
+  </div>
+</div>

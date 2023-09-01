@@ -1,0 +1,16 @@
+<div class="base-container">
+  <section class="success-stories-section">
+    <h1 data-aos="fade-right" data-aos-duration="1500">Historias de éxitos</h1>
+    <p class="success-stories-section-description">Muchos usuarios confiaron en nosotros y nos permitieron ser parte de su viaje financiero. <br>
+    Hoy disfrutan de una mejor salud financiera y van alcanzando su máximo potencial.</p>
+  
+    <div class="success-stories-box">
+      <div *ngFor="let item of data" class="success-stories-item" data-aos="fade-down" data-aos-duration="1500">
+        <img src="{{item.img}}" alt="{{item.name}}">
+        <h4>{{item.name}}</h4>
+        <p class="success-stories-item-business">{{item.business}}</p>
+        <p>{{item.msg}}</p>
+      </div>
+    </div>
+  </section>
+</div>
