@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
 import { ServiceOfferComponent } from './service-offer/service-offer.component';
 import { SuccessStoriesComponent } from './success-stories/success-stories.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,7 +16,8 @@ import { SuccessStoriesComponent } from './success-stories/success-stories.compo
     SuccessStoriesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
   ]
 })
 export class HomeModule { }
