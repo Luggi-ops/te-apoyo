@@ -9,22 +9,22 @@
     <div class="{{!isOpenMenu ? 'menu-container' : 'menu-container menu-open'}}">
       <ul class="menu-list">
         <li class="menu-list-item">
-          <a routerLink="/">Inicio</a>
+          <a routerLink="/" (click)="close()">Inicio</a>
         </li>
         <li class="menu-list-item">
-          <a routerLink="/nosotros">Nosotros</a>
+          <a routerLink="/nosotros" (click)="close()">Nosotros</a>
         </li>
         <li class="menu-list-item">
-          <a routerLink="/personal">Personal</a>
+          <a routerLink="/personal" (click)="close()">Personal</a>
         </li>
         <li class="menu-list-item">
-          <a routerLink="/empresarial">Empresarial</a>
+          <a routerLink="/empresarial" (click)="close()">Empresarial</a>
         </li>
         <li class="menu-list-item">
-          <a routerLink="/planes">Planes</a>
+          <a routerLink="/planes" (click)="close()">Planes</a>
         </li>
         <li class="menu-list-item">
-          <a routerLink="/recursos">Recursos</a>
+          <a routerLink="/recursos" (click)="close()">Recursos</a>
         </li>
       </ul>
       <div>

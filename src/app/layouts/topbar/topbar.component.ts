@@ -11,4 +11,8 @@ export class TopbarComponent {
   open(){
     this.isOpenMenu = !this.isOpenMenu;
   }
+
+  close(){
+    this.isOpenMenu = false;
+  }
 }
