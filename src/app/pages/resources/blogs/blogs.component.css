@@ -186,4 +186,9 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .blog-pagination{
+    left: 5%;
+  }
+  
 }
